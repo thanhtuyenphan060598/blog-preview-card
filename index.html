@@ -6,25 +6,47 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-
+    <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Blog preview card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Learning Published 21 Dec 2023 HTML & CSS foundations These languages are the backbone of every
-    website, defining structure, content, and presentation. Greg Hooper
-
-    <div class="attribution">
+    <main class="container">
+      <section class="card">
+        <div class="card__wrapper">
+          <div class="card__image">
+            <img
+              src="./assets/images/illustration-article.svg"
+              alt="illustration article"
+              class="card__image-img"
+            />
+          </div>
+          <div class="card__content">
+            <div class="card__content-badge">Learning</div>
+            <time class="card__content-date"> Published 21 Dec 2023 </time>
+            <section>
+              <h1 class="card__content-title">HTML & CSS foundations</h1>
+              <p class="card__content-description">
+                These languages are the backbone of every website, defining structure, content, and
+                presentation.
+              </p>
+            </section>
+          </div>
+          <div class="card__author">
+            <div class="card__author-avatar">
+              <img
+                src="./assets/images/image-avatar.webp"
+                alt="author avatar"
+                class="card__author-img"
+              />
+            </div>
+            <div class="card__author-info">
+              <h2 class="card__author-name">Greg Hooper</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
       Challenge by
       <a
         href="https://www.frontendmentor.io?ref=challenge"
@@ -38,6 +60,6 @@
         rel="noopener noreferrer"
         >tuyenpt</a
       >.
-    </div>
+    </footer>
   </body>
 </html>
